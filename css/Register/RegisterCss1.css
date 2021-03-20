@@ -1,0 +1,85 @@
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    background-color: rgb(255, 255, 255);
+    border-color: #d1d1d1;
+    height: auto;
+}
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+    color: rgb(0, 88, 40);
+    margin-left: 5%;
+}
+a {
+
+    color: #337ab7;
+    text-decoration: none;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif; 
+    background-color: transparent;
+    -webkit-text-stroke-width: medium;
+}
+.container{
+    height: 100%;
+    background-color: #F7F7F7;
+}
+html,body { height:100%; 
+background-color: rgb(214, 214, 214);}
+.form-class{
+  background-color: #ffffff;
+  margin-left: 20%;
+  margin-right: 20%;
+  min-height: 50%;
+  top: 30%;
+  width: 40%;
+    
+}
+#Emptxt{
+    align-content: center;
+    display: inline-block;
+    margin-top: 10px;
+    font-size: large;
+    font-family: sans-serif;
+    align-content: flex-end ;
+    margin-left: 45px;
+}
+.formtable{
+
+    border-spacing: 15px;
+    border-radius: 10px;
+    text-justify: auto;
+    margin-left: 30px;
+
+}
+th, td{
+    text-align: left;
+    height: 20px;
+}
+#fname, textarea{
+    width: 100%;
+}
+#salary{
+    width:50%;
+}
+
+select{
+    width: 20%;
+}
+button{
+    margin-left: 10%;
+    text-align: center;
+    text-decoration: none;
+    tab-size: 100px;
+    display: inline-block;
+  font-size: 100%;
+  background-color: rgb(202, 202, 202);
+}
+.profileimage{
+    width:30px;height:30px;;
+}

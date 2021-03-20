@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee registration</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="icon" href="..\..\img\icon1.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/Register/RegisterCss.css">
+    <script src="../../js/registerjs/register.js"></script>
+ 
+</head>
+<body>
+    <div class="navbar">
+        <div class=></div>
+            <a class="navbar-brand" href="#">Employee Payroll</a>
+        </div>
+    </div>     
+
+      <div class="form-class">
+          <span id="Emptxt">Employee payroll form</span>
+        <form id="registerform" action="#" onsubmit="return register(event)">  
+            <Table class="formtable">
+                <tr>
+                    <th>
+                        <label for="name">Name:</label>
+                    </th>
+                    <td colspan="2">
+                        <input type="text" id="fullname" name="fullname" pattern="[A-Za-z]{3,50}">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="profileImage">Profile image:</label>
+                    </th>
+                    <td>
+                        <input type="radio" id="profileImg1" name="profileImg" value="..\..\img\profileImg1.PNG">
+                        <img src="..\..\img\profileImg1.PNG" class="profileimage">
+                        <input type="radio" id="profileImg2" name="profileImg" value="..\..\img\profileImg2.PNG">
+                        <img src="..\..\img\profileImg2.PNG" class="profileimage">
+                        <input type="radio" id="profileImg3" name="profileImg" value="..\..\img\profileImg3.PNG">
+                        <img src="..\..\img\profileImg3.PNG" class="profileimage">
+                        <input type="radio" id="profileImg4" name="profileImg" value="..\..\img\profileImg4.PNG">
+                        <img src="..\..\img\profileImg4.PNG" class="profileimage">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label>Gender:</label>
+                    </th>
+                    <td colspan="2" >
+                        <input type="radio" id="male" name="gender" value="m">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="f">
+                        <label for="female">Female</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label>Department:</label></th>
+                    <td colspan="3">
+                        <input type="checkbox" id="HR" name="department" value="HR"><label>HR</label>
+                        <input type="checkbox" id="Sales" name="department" value="Sales"><label>Sales</label>
+                        <input type="checkbox" id="Finance" name="department" value="Finance"><label>Finance</label>
+                        <input type="checkbox" id="Engineer" name="department" value="Engineer"><label>Engineer</label>
+                        <input type="checkbox" id="Others" name="department" value="Others"><label>Others</label>
+                    </td>
+                </tr>          
+                <tr>
+                    <th><label for="salary">Salary:</label></th>
+                    <td ><select name="salary" id="salary">
+                            <option value=0>Salary</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <th><label for="start date">Start date:</label></th>
+                    <td colspan="3">
+                        <select id="start-date-day" name="day" id="day">
+                            <option value="0">Day</option>
+                        </select>
+    
+                        <select id="start-date-month" name="month" id="month">
+                            <option value="0">Month</option>  
+                        </select>
+    
+                        <select id="start-date-year" name="year" id="year">
+                            <option value="0">Year</option>
+    
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th><label for="start date">Notes:</label></th>
+                    <td colspan="3">
+                        <textarea id="notes" name="notes" rows="4" cols="30"></textarea></td>
+                </tr>
+                <tr>
+                  
+                    <th><input type="button" name="cancel" value="cancel"></th>   
+                    <th><input type="submit" id="submit-form">
+                        <input onclick="resetFields()" type="reset"></th>  
+                    
+                </tr>
+            </Table>
+        </form>
+   
+    </div>
+
+</body>
+</html>
