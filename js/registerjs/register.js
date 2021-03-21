@@ -27,7 +27,7 @@ function register(event){
         type: "POST",
         data: rdata,
         dataType: "json",
-      
+       
         contentType:'application/json',
         success: function (data) {
             console.log(data);
@@ -88,7 +88,3 @@ function AddDateField() {
   function resetFields(){
     document.getElementById("registerform").reset();
   }
-  function close(){
-      alert();
-  }
-  
