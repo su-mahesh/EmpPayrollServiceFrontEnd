@@ -28,12 +28,13 @@
             
             <div class="flexBox">
                 <label class="left-label" for="name">Name:</label>
-                <input type="text" id="fullname" name="fullname" pattern="[A-Za-z]{3,50}">
+                <input type="text" id="fullname" name="fullname" pattern="[A-Za-z ]{3,50}" required>
             </div>
             <div class="flexBox">
                 <label class="left-label" for="profileImage">Profile image:</label>
-                <input class="radio" type="radio" id="profileImg1" name="profileImg" value="..\..\img\profileImg1.PNG">
-                <img src="\..\img\profileImg1.PNG" class="profileimage">
+     
+                <input class="radio" type="radio" id="profileImg1" name="profileImg" value="..\..\img\profileImg1.PNG"  >
+                <img src="\..\img\profileImg1.PNG" class="profileimage" >
                 <input class="radio" type="radio" id="profileImg2" name="profileImg" value="..\..\img\profileImg2.PNG">
                 <img src="\..\img\profileImg2.PNG" class="profileimage">
                 <input class="radio" type="radio" id="profileImg3" name="profileImg" value="..\..\img\profileImg3.PNG">
@@ -43,34 +44,34 @@
             </div>
             <div class="flexBox">
                 <label class="left-label">Gender:</label>
-                <input type="radio" id="male" name="gender" value="m">
+                <input type="radio" id="male" name="gender" value="m" required>
                 <label class="right-label" for="male">Male</label>
-                <input type="radio" id="female" name="gender" value="f">
+                <input type="radio" id="female" name="gender" value="f" required>
                 <label class="right-label" for="female">Female</label>
             </div>
             <div class="flexBox">
                 <label class="left-label">Department:</label>
-                <input type="checkbox" id="HR" name="department" value="HR"><label class="right-label">HR</label>
-                <input type="checkbox" id="Sales" name="department" value="Sales"><label class="right-label">Sales</label>
-                <input type="checkbox" id="Finance" name="department" value="Finance"><label class="right-label">Finance</label>
-                <input type="checkbox" id="Engineer" name="department" value="Engineer"><label class="right-label">Engineer</label>
-                <input type="checkbox" id="Others" name="department" value="Others"><label class="right-label">Others</label>
+                <input type="checkbox" id="HR" name="department" value="HR" ><label class="right-label">HR</label>
+                <input type="checkbox" id="Sales" name="department" value="Sales" ><label class="right-label">Sales</label>
+                <input type="checkbox" id="Finance" name="department" value="Finance" ><label class="right-label">Finance</label>
+                <input type="checkbox" id="Engineer" name="department" value="Engineer" ><label class="right-label">Engineer</label>
+                <input type="checkbox" id="Others" name="department" value="Others" ><label class="right-label">Others</label>
             </div>
             <div class="flexBox">
                 <label class="left-label" for="salary">Salary:</label>
-                <select name="salary" id="salary">
+                <select name="salary" id="salary" required>
                     <option value=0>Select Salary</option>
                 </select>
             </div>
             <div class="flexBox">
                 <label class="left-label" for="start date">Start date:</label>
-                <select id="start-date-day" name="day" id="day">
+                <select id="start-date-day" name="day" id="day" required>
                     <option value="0">Day</option>
                 </select>
-                <select id="start-date-month" name="month" id="month">
+                <select id="start-date-month" name="month" id="month" required>
                     <option value="0">Month</option>  
                 </select>
-                <select id="start-date-year" name="year" id="year">
+                <select id="start-date-year" name="year" id="year" required>
                     <option value="0">Year</option>
                 </select>
             </div>
@@ -79,12 +80,15 @@
                 <textarea id="notes" name="notes" rows="3" cols="30"></textarea></td>
             </div>
             <div class="flexBox">
-                <input class="btn" id="cancel" type="button" name="cancel" value="cancel">
+                <input class="btn" id="cancel" type="button" name="cancel" value="Cancel">
                 <input class="btn" type="submit" id="submit-form">
                 <input class="btn" id="reset" onclick="resetFields()" type="reset">  
             </div>
         </form>
+        
        </div>
        <div id="snackbar">registering employee..</div>
+      
+       
 </body>
 </html>

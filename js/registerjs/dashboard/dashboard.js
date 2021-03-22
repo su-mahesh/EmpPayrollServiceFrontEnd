@@ -1,4 +1,6 @@
 $(document).ready(function(){
+  
+  console.log(moment('11/11/1111').format('MM/DD/YYYY'));
   var table = document.getElementById("emp-table");
   $(document).on('click','#delEmp',function(){   
 
@@ -17,8 +19,6 @@ $(document).ready(function(){
       }
   });
   });
-
- 
 
     getData();
     function getData(){
@@ -41,24 +41,34 @@ $(document).ready(function(){
     }
     function setEmpoyees(employees){
       $("#emp-table").find("tr:gt(0)").remove();
-
       
       var i;
       for (i = 0; i < employees.length; i++) {
+  //      console.log(employees[i]["profileImage"]);
              var row = table.insertRow();
-             row.value=employees[i]["employeeID"];
-             row.insertCell().innerHTML = employees[i]["employeeID"];
+             
+       
+             if (employees[i]["profileImage"] != null)
+             {
+            //  console.log(employees[i]["profileImage"]);  
+              row.insertCell().innerHTML =
+              '<img src="'+employees[i]["profileImage"]
+             +'" class="dash-img" ></img>';
+             }        
+             else
+             row.insertCell().innerHTML ="";
+             
              row.insertCell().innerHTML = employees[i]['employeeName'];
-             row.insertCell().innerHTML = employees[i]['gender'];
+             row.insertCell().innerHTML = employees[i]['gender'].toUpperCase();
 
-           var s =  departmentStr(employees[i]['department']);
+              var s =  departmentStr(employees[i]['department']);
              row.insertCell().innerHTML = s;
              
              row.insertCell().innerHTML ='₹ '+ employees[i]['salary'];  
-             row.insertCell().innerHTML = employees[i]['startDate'];
+             row.insertCell().innerHTML = moment(employees[i]['startDate']).format('DD MMM YYYY')
              row.insertCell().innerHTML = 
-             '<button class="tr-btn" id="delEmp" value='+employees[i]["employeeID"]+'><i class="fa fa-trash"></i></button>'+
-             '<button class="edit-btn" id="editEmp" value='+employees[i]["employeeID"]+'><i class="fa fa-pencil"></i></button>';
+             '<button class="edit-btn" id="editEmp" value='+employees[i]["employeeID"]+'><i class="fa fa-pencil"></i></button>'+
+             '<button class="tr-btn" id="delEmp" value='+employees[i]["employeeID"]+'><i class="fa fa-trash"></i></button>';
              
       }
     }

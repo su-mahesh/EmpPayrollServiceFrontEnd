@@ -240,7 +240,9 @@ a {
     float: left;
     height: 50px;
     padding-top: 7px;
-    font-size: 20px;
+    padding-bottom: 7px;
+
+    font-size: 10px;
     line-height: 20px;
     color:#82A70C;
     margin-left: 5%;

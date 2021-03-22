@@ -1,9 +1,8 @@
 table{
   border-spacing: 0 3px;
     border: none;
-    margin-left: auto;
-  margin-right: auto;
-    width: 70%;
+    margin-top: 10px;
+    width: 100%;
     font-size: 60%;   
     border: none;
 }
@@ -73,4 +72,34 @@ outline:none;
 .edit-btn:hover {
 
   color: blue;
+}
+.icon{
+  width: 15%;
+}
+.div-table{
+  margin-left: 15%;
+  margin-right: 15%;
+  opacity: 100%;
+  text-align: left;
+  
+  color: #42515F;
+}
+.empd{
+  font-weight: bold;
+}
+.search{
+  float: right;
+  right: 10px;
+}
+.refRegister{
+  float: right;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 90%;
+  background-color: #82A70C;
+  font-weight: lighter;
+}
+
+.dash-img{
+  width: 30px;
+  height: 30px;
 }
