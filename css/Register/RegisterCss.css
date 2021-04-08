@@ -13,6 +13,7 @@ html,body {
 }
 
 .flexBox{
+  
     box-sizing: border-box;
     font-size: 90%;
     text-align: center;
